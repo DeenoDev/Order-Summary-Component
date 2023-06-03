@@ -121,6 +121,7 @@ h2{
     color: var(--clr-neutral-800);
 }
 
+
 /* COMPOSITION Controls Layouts */
 
 .grid-flow {
@@ -182,9 +183,34 @@ h2{
     font-weight: var(--fw-900);
 }
 
+.br-1{
+  border-radius: 0.5rem;
+}
+
+.br-2{
+    border-radius: 1rem;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-700);
+    background-color: var(--clr-primary-400);
+    padding: 1em 2em;
+
+}
+
+.button:hover,
+.button:focus{
+    background: var(--clr-primary-300);
+}
+
 /* BLOCK */
 
 .card{
-
+    overflow: hidden;
     max-width: 450px;
 }
