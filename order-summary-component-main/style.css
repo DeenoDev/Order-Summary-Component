@@ -115,3 +115,28 @@ h2{
     font-size: var(--fs-700);
     color: var(--clr-neutral-800);
 }
+
+/* COMPOSITION */
+
+
+
+/* UTILLITY */
+.padding-24{
+    padding: 1.5rem;
+}
+
+.padding-48{
+    padding: 3rem;
+}
+
+.text-dark{
+    color: var(--clr-neutral-800);
+}
+
+.text-subdued{
+    color: var(--clr-neutral-400);
+}
+
+.text-neutral-800{
+    color: var(--clr-neutral-800);
+}
