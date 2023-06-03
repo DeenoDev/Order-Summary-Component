@@ -117,19 +117,27 @@ h3{
 
 h2{
     font-size: var(--fs-700);
+    font-weight: var(--fw-900);
     color: var(--clr-neutral-800);
 }
 
-/* COMPOSITION */
+/* COMPOSITION Controls Layouts */
 
-.flow > :where(:not(:first-child)) {
-    margin-top: var(--flow-spacer, 1em);
-    border: 1px solid
+.grid-flow {
+    display: grid;
+    gap: var(--gap, 1rem );
+}
+
+.flex-row{
+    display: flex;
+    gap: var(--gap, 1rem);
 }
 
 
 
-/* UTILLITY */
+
+
+/* UTILLITY Controls Styling*/
 .padding-24{
     padding: 1.5rem;
 }
@@ -164,6 +172,14 @@ h2{
 
 .text-align-right{
     text-align: end;
+}
+
+.fw-bold{
+    font-weight: var(--fw-700);
+}
+
+.fw-black{
+    font-weight: var(--fw-900);
 }
 
 /* BLOCK */
