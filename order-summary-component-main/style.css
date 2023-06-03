@@ -122,6 +122,11 @@ h2{
 
 /* COMPOSITION */
 
+.flow > :where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 1em);
+    border: 1px solid
+}
+
 
 
 /* UTILLITY */
