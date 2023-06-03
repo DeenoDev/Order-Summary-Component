@@ -191,26 +191,68 @@ h2{
     border-radius: 1rem;
 }
 
+.push-right{
+    margin-left: auto;
+}
+
 .button {
     cursor: pointer;
     text-decoration: none;
     border: none;
     border-radius: 0.5rem;
-    color: var(--clr-neutral-100);
     font-weight: var(--fw-700);
-    background-color: var(--clr-primary-400);
+    background: transparent;
     padding: 1em 2em;
 
 }
 
-.button:hover,
-.button:focus{
+.button[data-type="primary"]{
+    color: var(--clr-neutral-100);
+    background: var(--clr-primary-400);
+}
+
+.button[data-type="primary"]:hover,
+.button[data-type="primary"]:focus{
     background: var(--clr-primary-300);
 }
+
+.button[data-type="naked"]{
+    color: var(--clr-neutral-400);
+    padding: 0;
+}
+
+.button[data-type="naked"]:hover,
+.button[data-type="naked"]:focus{
+    color: var(--clr-neutral-800);
+}
+
+a,
+.link{
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: var(--clr-primary-400);
+    text-decoration: underline;
+    font-weight: var(--fw-700);
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus
+{
+ color: var(--clr-primary-300);
+ text-decoration: none;
+ }
 
 /* BLOCK */
 
 .card{
     overflow: hidden;
     max-width: 450px;
+    margin-block: 3rem;
+}
+
+.attribution{
+    margin-bottom: 3rem;
 }
