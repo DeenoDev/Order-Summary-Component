@@ -103,6 +103,10 @@ body{
     line-height: 1.6;
     color: var(--clr-neutral-400);
     background: var(--clr-primary-200);
+    /* for demo only */
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
 }
 
 h1,
@@ -129,14 +133,37 @@ h2{
     padding: 3rem;
 }
 
-.text-dark{
+.text-neutral-800{
     color: var(--clr-neutral-800);
 }
 
-.text-subdued{
+.text-neutral-400{
     color: var(--clr-neutral-400);
 }
 
-.text-neutral-800{
-    color: var(--clr-neutral-800);
+.bg-neutral-100{
+    background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-200{
+    background-color: var(--clr-neutral-200);
+}
+
+.text-align-left{
+    text-align: start;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-right{
+    text-align: end;
+}
+
+/* BLOCK */
+
+.card{
+
+    max-width: 450px;
 }
